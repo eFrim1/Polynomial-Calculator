@@ -1,4 +1,4 @@
-package com.example.pt2024_30227_frim_eleazar_assignment_1;
+package com.example.UI;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

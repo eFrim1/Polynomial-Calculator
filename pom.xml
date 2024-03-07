@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.pt2024_30227_frim_eleazar_assignment_1/com.example.pt2024_30227_frim_eleazar_assignment_1.HelloApplication
+                                com.example.pt2024_30227_frim_eleazar_assignment_1/com.example.UI.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
