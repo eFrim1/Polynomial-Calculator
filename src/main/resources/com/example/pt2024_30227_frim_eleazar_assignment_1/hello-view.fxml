@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.pt2024_30227_frim_eleazar_assignment_1.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="443.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane id="topPane" prefHeight="99.0" prefWidth="444.0" stylesheets="@style.css">
+         <children>
+            <Text fill="WHITE" layoutX="88.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Polynomial Calculator" textAlignment="CENTER" wrappingWidth="269.1133117675781">
+               <font>
+                  <Font name="Helvetica Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="TextFieldFX1" layoutX="56.0" layoutY="134.0" prefHeight="64.0" prefWidth="330.0" stylesheets="@forms.css" />
+      <Button id="plusButton" fx:id="ButtonPlus" layoutX="74.0" layoutY="411.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="multiplyButton" fx:id="ButtonMultiply" layoutX="231.0" layoutY="411.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="divideButton" fx:id="ButtonDivide" layoutX="307.0" layoutY="411.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="minusButton" fx:id="ButtonMinus" layoutX="152.0" layoutY="411.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="derivationButton" fx:id="ButtonDerivation" layoutX="152.0" layoutY="484.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="integrationButton" fx:id="ButtonIntegration" layoutX="231.0" layoutY="484.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button layoutX="160.0" layoutY="596.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="117.0" stylesheets="@forms.css" text="Clear" />
+      <TextField fx:id="TextFieldFX2" layoutX="56.0" layoutY="208.0" prefHeight="64.0" prefWidth="330.0" stylesheets="@forms.css" />
+      <TextField fx:id="TextFieldResult" layoutX="56.0" layoutY="283.0" prefHeight="64.0" prefWidth="330.0" stylesheets="@forms.css" />
+   </children>
+</AnchorPane>
