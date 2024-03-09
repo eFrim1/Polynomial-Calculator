@@ -17,15 +17,16 @@
             </Text>
          </children>
       </AnchorPane>
-      <TextField fx:id="TextFieldFX1" layoutX="56.0" layoutY="134.0" prefHeight="64.0" prefWidth="330.0" stylesheets="@forms.css" />
-      <Button id="plusButton" fx:id="ButtonPlus" layoutX="74.0" layoutY="411.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
-      <Button id="multiplyButton" fx:id="ButtonMultiply" layoutX="231.0" layoutY="411.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
-      <Button id="divideButton" fx:id="ButtonDivide" layoutX="307.0" layoutY="411.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
-      <Button id="minusButton" fx:id="ButtonMinus" layoutX="152.0" layoutY="411.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
-      <Button id="derivationButton" fx:id="ButtonDerivation" layoutX="152.0" layoutY="484.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
-      <Button id="integrationButton" fx:id="ButtonIntegration" layoutX="231.0" layoutY="484.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
-      <Button layoutX="160.0" layoutY="596.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="117.0" stylesheets="@forms.css" text="Clear" />
-      <TextField fx:id="TextFieldFX2" layoutX="56.0" layoutY="208.0" prefHeight="64.0" prefWidth="330.0" stylesheets="@forms.css" />
-      <TextField fx:id="TextFieldResult" layoutX="56.0" layoutY="283.0" prefHeight="64.0" prefWidth="330.0" stylesheets="@forms.css" />
+      <TextField fx:id="textFieldFX1" layoutX="56.0" layoutY="134.0" prefHeight="64.0" prefWidth="330.0" promptText="First Polynomial" stylesheets="@forms.css" />
+      <Button id="plusButton" fx:id="buttonPlus" layoutX="75.0" layoutY="455.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="multiplyButton" fx:id="buttonMultiply" layoutX="232.0" layoutY="455.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="divideButton" fx:id="buttonDivide" layoutX="308.0" layoutY="455.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="minusButton" fx:id="buttonMinus" layoutX="153.0" layoutY="455.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="derivationButton" fx:id="buttonDerivation" layoutX="153.0" layoutY="528.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="integrationButton" fx:id="buttonIntegration" layoutX="232.0" layoutY="528.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button fx:id="buttonClear" layoutX="161.0" layoutY="640.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="117.0" stylesheets="@forms.css" text="Clear" />
+      <TextField fx:id="textFieldFX2" layoutX="56.0" layoutY="208.0" prefHeight="64.0" prefWidth="330.0" promptText="Second Polynomial" stylesheets="@forms.css" />
+      <TextField fx:id="textFieldResult" editable="false" layoutX="56.0" layoutY="282.0" prefHeight="64.0" prefWidth="330.0" promptText="Result" stylesheets="@forms.css" />
+      <TextField fx:id="TextFieldResult2" editable="false" layoutX="56.0" layoutY="356.0" prefHeight="64.0" prefWidth="330.0" promptText="Remainder" stylesheets="@forms.css" visible="false" />
    </children>
 </AnchorPane>

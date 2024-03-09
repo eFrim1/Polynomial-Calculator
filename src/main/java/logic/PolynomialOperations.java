@@ -1,14 +1,11 @@
 package logic;
 
 import dataModels.Polynomial;
-
-import java.util.List;
 import java.util.Map;
 
 public class PolynomialOperations {
     
-    
-    public static Polynomial add(Polynomial polynomial1, Polynomial polynomial2){
+    public static Polynomial add( Polynomial polynomial1, Polynomial polynomial2){
         Polynomial result = new Polynomial();
 
         for(Map.Entry<Integer, Double> term : polynomial1.getPolynomialTerms().entrySet()){
@@ -70,12 +67,10 @@ public class PolynomialOperations {
     public static Polynomial divide(Polynomial polynomial1, Polynomial polynomial2){
         Polynomial result = new Polynomial();
 
-
-        //long division
         while(polynomial1.getPolynomialTerms().size() >= polynomial2.getPolynomialTerms().size()){
-            //refactor
-            Map.Entry<Integer, Double> term1 = polynomial1.getPolynomialTerms().entrySet().stream().max(Map.Entry.comparingByKey()).get();
-            Map.Entry<Integer, Double> term2 = polynomial2.getPolynomialTerms().entrySet().stream().max(Map.Entry.comparingByKey()).get();
+
+            Map.Entry<Integer, Double> term1 = polynomial1.getPolynomialTerms().firstEntry();
+            Map.Entry<Integer, Double> term2 = polynomial2.getPolynomialTerms().firstEntry();
 
             int exponent = term1.getKey() - term2.getKey();
             double coefficient = term1.getValue() / term2.getValue();
@@ -125,4 +120,5 @@ public class PolynomialOperations {
 
         return result;
     }
+
 }
