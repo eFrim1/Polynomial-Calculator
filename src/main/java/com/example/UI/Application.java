@@ -18,8 +18,6 @@ public class Application extends javafx.application.Application {
     }
 
     public static void main(String[] args) {
-        Polynomial polynomial = new Polynomial("3x^2 - 2.58*x + 1");
-        System.out.println(polynomial);
         launch();
     }
 }
