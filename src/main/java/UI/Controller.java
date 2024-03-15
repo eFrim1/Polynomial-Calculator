@@ -1,4 +1,4 @@
-package com.example.UI;
+package UI;
 
 import dataModels.Polynomial;
 import javafx.fxml.FXML;

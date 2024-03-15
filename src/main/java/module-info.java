@@ -3,8 +3,8 @@ module com.example.pt2024_30227_frim_eleazar_assignment_1 {
     requires javafx.fxml;
 
 
-    opens com.example.UI to javafx.fxml;
-    exports com.example.UI;
+    opens UI to javafx.fxml;
+    exports UI;
     exports dataModels;
     exports logic;
 }
