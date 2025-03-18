@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="443.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controller">
+   <children>
+      <AnchorPane id="topPane" prefHeight="99.0" prefWidth="444.0" stylesheets="@style.css">
+         <children>
+            <Text fill="WHITE" layoutX="88.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Polynomial Calculator" textAlignment="CENTER" wrappingWidth="269.1133117675781">
+               <font>
+                  <Font name="Helvetica Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="textFieldFX1" layoutX="56.0" layoutY="134.0" prefHeight="64.0" prefWidth="330.0" promptText="First Polynomial" stylesheets="@forms.css" />
+      <Button id="plusButton" fx:id="buttonPlus" layoutX="75.0" layoutY="455.0" mnemonicParsing="false" onAction="#onButtonPlusClick" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="multiplyButton" fx:id="buttonMultiply" layoutX="232.0" layoutY="455.0" mnemonicParsing="false" onAction="#onButtonMultiplyClick" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="divideButton" fx:id="buttonDivide" layoutX="308.0" layoutY="455.0" mnemonicParsing="false" onAction="#onButtonDivideClick" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="minusButton" fx:id="buttonMinus" layoutX="153.0" layoutY="455.0" mnemonicParsing="false" onAction="#onButtonMinusClick" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="derivationButton" fx:id="buttonDerivation" layoutX="153.0" layoutY="528.0" mnemonicParsing="false" onAction="#onButtonDerivationClick" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button id="integrationButton" fx:id="buttonIntegration" layoutX="232.0" layoutY="528.0" mnemonicParsing="false" onAction="#onButtonIntegrationClick" prefHeight="59.0" prefWidth="59.0" stylesheets="@forms.css" />
+      <Button fx:id="buttonClear" layoutX="161.0" layoutY="640.0" mnemonicParsing="false" onAction="#onButtonClearClick" prefHeight="26.0" prefWidth="117.0" stylesheets="@forms.css" text="Clear" />
+      <TextField fx:id="textFieldFX2" layoutX="56.0" layoutY="208.0" prefHeight="64.0" prefWidth="330.0" promptText="Second Polynomial" stylesheets="@forms.css" />
+      <TextField fx:id="textFieldResult" editable="false" layoutX="56.0" layoutY="282.0" prefHeight="64.0" prefWidth="330.0" promptText="Result" stylesheets="@forms.css" />
+      <TextField fx:id="textFieldResult2" editable="false" layoutX="56.0" layoutY="356.0" prefHeight="64.0" prefWidth="330.0" promptText="Remainder" stylesheets="@forms.css" visible="false" />
+   </children>
+</AnchorPane>
